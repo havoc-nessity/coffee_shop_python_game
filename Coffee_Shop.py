@@ -1,42 +1,24 @@
 #!/usr/bin/env python3
 
-#suck my arse
+#suck my asshole
 
-def main():
+print("\nWelcome to the coffee shop, I'm your robot server, and no, not that kind of server, the kind that serves you coffee.\n")
+order = input("So, what would you like?\n").lower().strip()
 
-	import time
+if order == "help":
 
-	print("\n\"Welcome to the coffee shop, I'm your robot server, and no, not that kind of server, the kind that serves you coffee.\"\n")
-	order=input('"So, what would you like?"\n').lower().strip()
+elif order == "menu":
 
-	menu_list=["Dark Coffee", "Iced Coffee", "Hot Coffee",]
+elif order == "dark coffee":
 
-	ans=0
-	
-#fuck this "while" bullshit took me so damn long just to loop this part
-	while(ans==0):
+elif order == "mocha":
 
-		if order=="help":
-			time.sleep(0.200)
-			print("\n\"If you want to do an action, you can add a '*' symbol at the beggining and end of the said action")
+elif order == "iced coffee":
 
-		elif order=="menu":
-			print("\n")
-			print(menu_list)
-			order=input("\n").lower().strip()
+else:
+	print("dafaq? fuck off mate")
+	exit()
 
-		elif order=="dark coffee":
-			ans=1
+print("okay you'll get your " + order + " shortly.")
 
-		#elif order == "iced coffee":
-			
-		else:
-			order=input("\nwhat? I can't seem to understand...\n").lower().strip()
-			
-	print("\n\"Okay, you'll get your "+order+" shortly...\"")
-	
-if __name__=="__main__":
-	main()
-	
-exit()
-main()
+
