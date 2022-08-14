@@ -2,3 +2,5 @@
 simple python choose your own adventure game
 
 pls dont open in text editor and just put it in ur command line or something thanksss
+
+(also might need help in doing a few things cause im new to coding so pls help if you can thanks)
